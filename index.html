@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>WCO matchMedia mismatch</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>WCO matchMedia mismatch repro</h1>
+    <p>
+      Window is configured with
+      <code>frame: false</code>,
+      <code>titleBarStyle: 'hidden'</code>,
+      <code>titleBarOverlay: { height: 40, ... }</code>.
+    </p>
+    <p>
+      Three of four standard WCO entry points correctly report that WCO is
+      active. Only <code>matchMedia('(display-mode: window-controls-overlay)')</code>
+      disagrees and returns <code>matches: false</code>.
+    </p>
+    <table id="results">
+      <thead>
+        <tr><th>Signal</th><th>Value</th><th>Expected</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#1f1f1f" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon-512.png" />
+    <title>WCO matchMedia mismatch (Chromium PWA)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>WCO matchMedia mismatch repro &mdash; Chromium PWA</h1>
+    <p>
+      Open this page over <code>http://localhost</code> in Chrome, then
+      <strong>install it as an app</strong> (omnibox install icon, or
+      <code>&hellip;</code> &rarr; <em>Install &hellip;</em>). The installed
+      window declares <code>display_override: ["window-controls-overlay"]</code>
+      so Chromium activates WCO and overlays the window controls onto the page.
+    </p>
+    <p>
+      The probe below queries the four standard WCO entry points. In an
+      installed PWA window with WCO active, all four should agree
+      (<code>matchMedia</code> returns <code>true</code>, the others are
+      populated). In an ordinary browser tab, all four should agree the
+      other way (everything <code>false</code>/<code>0</code>/empty).
+    </p>
+    <table id="results">
+      <thead>
+        <tr><th>Signal</th><th>Value</th><th>Expected (PWA + WCO)</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="renderer.js"></script>
+  </body>
+</html>

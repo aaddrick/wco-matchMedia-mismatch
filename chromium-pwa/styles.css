@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #1f1f1f;
+  color: #eaeaea;
+  font: 14px/1.5 system-ui, sans-serif;
+}
+body { padding: 56px 24px 24px; }
+h1 { font-size: 18px; margin: 0 0 12px; }
+code { background: #111; padding: 1px 5px; border-radius: 3px; }
+table { border-collapse: collapse; margin-top: 16px; width: 100%; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #333; vertical-align: top; }
+th { font-weight: 600; color: #aaa; }
+tr.ok td:nth-child(2)  { color: #7fdca0; }
+tr.bad td:nth-child(2) { color: #ff8585; font-weight: 600; }
