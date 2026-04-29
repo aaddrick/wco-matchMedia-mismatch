@@ -42,11 +42,15 @@ Verified on Electron 41.3.0 (Chromium 146), Linux X11 + Wayland, KDE Plasma 6
 ## Running the Electron repro
 
 The five top-level files are the standard Electron Fiddle quick-start
-layout. Either:
+layout. Also mirrored as a flat gist for one-click Fiddle import:
+https://gist.github.com/aaddrick/90a16bf22da070e07ff382c7a89ae3d8
 
-- **Via Electron Fiddle** — `Open with Electron Fiddle` from a clone of this
-  repo, then **Run**. Pick Electron 41 in the version dropdown to match the
-  verification environment.
+Either:
+
+- **Via Electron Fiddle** — paste the gist URL into Fiddle, or
+  `Open with Electron Fiddle` from a clone of this repo, then **Run**.
+  Pick Electron 41 in the version dropdown to match the verification
+  environment.
 - **Manually**:
 
   ```sh
